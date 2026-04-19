@@ -146,7 +146,6 @@ class AlienInvasion:
         self.screen.blit(self.bg, (0, 0))
         self.ship.arsenal.draw_arsenal()
         self.aliens.draw(self.screen)
-
         self.ship.draw()
         pygame.display.flip()
 
@@ -204,7 +203,7 @@ class AlienInvasion:
             self.ship.moving_up = False
         elif event.key == pygame.K_DOWN:
             self.ship.moving_down = False
-            
+
         elif event.key == pygame.K_RIGHT:
             self.ship.moving_right = False
         elif event.key == pygame.K_LEFT:
